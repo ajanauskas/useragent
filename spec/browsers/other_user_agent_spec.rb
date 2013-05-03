@@ -168,3 +168,4 @@ describe "UserAgent: 'check_http/v1.4.15 (nagios-plugins 1.4.15)'" do
   it { @useragent.os.should be_nil }
   it { @useragent.should_not be_mobile }
 end
+

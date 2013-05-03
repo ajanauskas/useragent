@@ -65,6 +65,12 @@ class UserAgent
           true
         elsif os =~ /Android/
           true
+        elsif os =~ /Opera Mini/
+          true
+        elsif os =~ /BlackBerry/
+          true
+        elsif browser =~ /Nokia/
+          true
         elsif application && application.comment &&
             application.comment.detect { |k, v| k =~ /^IEMobile/ }
           true
