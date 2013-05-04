@@ -69,6 +69,8 @@ class UserAgent
           true
         elsif os =~ /BlackBerry/
           true
+        elsif os =~ /RIM/
+          true
         elsif browser =~ /Nokia/
           true
         elsif application && application.comment &&

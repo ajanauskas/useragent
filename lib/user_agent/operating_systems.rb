@@ -15,7 +15,7 @@ class UserAgent
     }.freeze
 
     def self.normalize_os(os)
-      Windows[os] || normalize_mac_os_x(os) || detect_blackberry(os) || os
+      Windows[os] || normalize_mac_os_x(os) || os
     end
 
     private
@@ -30,12 +30,5 @@ class UserAgent
         end
       end
 
-      def self.detect_blackberry(os)
-        if os =~ /BlackBerry/ || os =~ /RIM Tablet/
-          "BlackBerry"
-        else
-          nil
-        end
-      end
   end
 end

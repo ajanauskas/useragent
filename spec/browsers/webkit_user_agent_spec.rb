@@ -1262,7 +1262,7 @@ describe "UserAgent: 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9800; en) AppleWebK
   end
 
   it "should return 'BlackBerry 9800' as its os" do
-    @useragent.os.should == "BlackBerry"
+    @useragent.os.should == "BlackBerry 9800"
   end
 
   it { @useragent.should be_mobile }
@@ -1308,7 +1308,7 @@ describe "UserAgent: 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.0.1; en-US) Appl
   it { @useragent.browser.should == 'Safari' }
   it { @useragent.version.should == "7.2.0.1" }
   it { @useragent.platform.should == 'PlayBook' }
-  it { @useragent.os.should == "BlackBerry" }
+  it { @useragent.os.should == "RIM Tablet OS 2.0.1" }
   it { @useragent.should be_mobile }
 end
 
